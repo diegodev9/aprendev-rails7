@@ -66,6 +66,7 @@ en:
   common:
     confirm: 'Are you sure?'
     back: 'Go back'
+    not_logged_in: "You are not logged in"
   products:
     edit:
       title: 'Edit product'

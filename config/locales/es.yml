@@ -36,6 +36,7 @@ es:
   common:
     confirm: '¿Estas seguro?'
     back: 'Volver'
+    not_logged_in: "Tienes que iniciar sesion"
   products:
     edit:
       title: 'Editar producto'
