@@ -31,6 +31,38 @@ en:
   app_name: "BuySale"
   meta_title: "buy and sell second hand products"
 
+  activerecord:
+    models:
+      product: 'Product'
+    attributes:
+      product:
+        title: 'Title'
+        description: 'Description'
+        price: 'Price'
+        photo: 'Photo'
+        select_category: 'Select category'
+    errors:
+      models:
+        product:
+          attributes:
+            title:
+              blank: 'Can not be blank'
+            description:
+              blank: 'Can not be blank'
+            price:
+              blank: 'Can not be blank'
+            category:
+              required: 'Needs to have a category'
+        user:
+          attributes:
+            username:
+              invalid: 'Incorrect user name'
+            email:
+              invalid: 'Incorrect email'
+            password:
+              blank: 'Password can not be blank'
+              too_short: 'Password needs to have at least 6 characters'
+
   common:
     confirm: 'Are you sure?'
     back: 'Go back'
@@ -73,3 +105,11 @@ en:
     header:
       new_product: ""
       categories: ""
+
+  authentication:
+    users:
+      new:
+        create_user: "Create user"
+        edit_user: "Save user"
+      create:
+        created: "User created"

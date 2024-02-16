@@ -24,6 +24,15 @@ es:
               blank: 'No puede estar vacio'
             category:
               required: 'Tiene que tener una categoria'
+        user:
+          attributes:
+            username:
+              invalid: 'El nombre de usuario es incorrecto'
+            email:
+              invalid: 'El email es incorrecto'
+            password:
+              blank: 'El password no puede estar en blanco'
+              too_short: 'El password debe tener al menos 6 caracteres'
   common:
     confirm: '¿Estas seguro?'
     back: 'Volver'
@@ -78,3 +87,11 @@ es:
     header:
       new_product: "Nuevo producto"
       categories: "Categorias"
+
+  authentication:
+    users:
+      new:
+        create_user: "Crear usuario"
+        edit_user: "Guardar usuario"
+      create:
+        created: "Usuario creado"
