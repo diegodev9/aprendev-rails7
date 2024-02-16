@@ -95,3 +95,7 @@ es:
         edit_user: "Guardar usuario"
       create:
         created: "Usuario creado"
+    sessions:
+      create:
+        created: "Bienvenido"
+        failed: "Login invalido"

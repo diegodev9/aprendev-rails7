@@ -113,3 +113,7 @@ en:
         edit_user: "Save user"
       create:
         created: "User created"
+    sessions:
+      create:
+        created: "Welcome"
+        failed: "Invalid login"
