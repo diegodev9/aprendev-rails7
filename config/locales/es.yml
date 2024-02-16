@@ -1,4 +1,7 @@
 es:
+  app_name: "CompraVenta"
+  meta_title: "compra y vende productos de segunda mano"
+
   activerecord:
     models:
       product: 'Producto'

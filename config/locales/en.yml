@@ -28,6 +28,9 @@
 #       enabled: "ON"
 
 en:
+  app_name: "BuySale"
+  meta_title: "buy and sell second hand products"
+
   common:
     confirm: 'Are you sure?'
     back: 'Go back'
