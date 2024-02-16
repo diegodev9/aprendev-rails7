@@ -24,6 +24,8 @@ es:
               blank: 'No puede estar vacio'
             category:
               required: 'Tiene que tener una categoria'
+            user:
+              required: 'El usuario debe existir'
         user:
           attributes:
             username:

@@ -53,6 +53,8 @@ en:
               blank: 'Can not be blank'
             category:
               required: 'Needs to have a category'
+            user:
+              required: 'User must exist'
         user:
           attributes:
             username:
