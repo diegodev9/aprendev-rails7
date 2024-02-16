@@ -28,4 +28,45 @@
 #       enabled: "ON"
 
 en:
-  hello: "Hello world"
+  common:
+    confirm: 'Are you sure?'
+    back: 'Go back'
+  products:
+    edit:
+      title: 'Edit product'
+    new:
+      title: 'New product'
+    form:
+      create_product: 'Create product'
+      edit_product: 'Edit product'
+    show:
+      delete_product: 'Delete product'
+      edit_product: 'Edit product'
+    index:
+      title: 'Products'
+      all: 'All'
+      min_price: 'Min price'
+      max_price: 'Max price'
+      query_text: 'What do you want to search?'
+      expensive: 'Expensive first'
+      cheapest: 'Cheaper first'
+      newest: 'Recently added'
+    create:
+      created: 'Product created'
+    update:
+      updated: 'Product updated'
+    destroy:
+      destroyed: 'Product destroyed'
+
+    categories:
+      index:
+        title: 'Categorias'
+        new: 'Add category'
+      edit:
+        title: 'Editar categoria'
+      new:
+        title: 'Nueva categoria'
+  shared:
+    header:
+      new_product: ""
+      categories: ""

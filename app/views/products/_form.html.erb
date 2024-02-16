@@ -1,0 +1,31 @@
+<%= form_with model: product do |form| %>
+  <% @product.errors.full_messages.each do |error| %>
+    <div><%= error %></div>
+  <% end %>
+
+  <div>
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+  <div>
+    <%= form.label :description %>
+    <%= form.text_area :description %>
+  </div>
+  <div>
+    <%= form.label :price %>
+    <%= form.number_field :price %>
+  </div>
+
+  <div>
+    <%= form.label :photo %>
+    <%= form.file_field :photo %>
+  </div>
+
+  <div>
+    <%= form.label :select_category %>
+    <%#= form.select :category_id, @categories %>
+    <%= form.collection_select :category_id, Category.all.order(name: :asc), :id, :name %>
+  </div>
+
+  <%= form.submit @product.new_record? ? t('.create_product') : t('.edit_product') %>
+<% end %>

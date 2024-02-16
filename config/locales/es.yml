@@ -1,0 +1,77 @@
+es:
+  activerecord:
+    models:
+      product: 'Producto'
+    attributes:
+      product:
+        title: 'Titulo'
+        description: 'Descripcion'
+        price: 'Precio'
+        photo: 'Foto'
+        select_category: 'Seleccionar categoria'
+    errors:
+      models:
+        product:
+          attributes:
+            title:
+              blank: 'No puede estar vacio'
+            description:
+              blank: 'No puede estar vacio'
+            price:
+              blank: 'No puede estar vacio'
+            category:
+              required: 'Tiene que tener una categoria'
+  common:
+    confirm: '¿Estas seguro?'
+    back: 'Volver'
+  products:
+    edit:
+      title: 'Editar producto'
+    new:
+      title: 'Nuevo producto'
+    form:
+      create_product: 'Crear producto'
+      edit_product: 'Editar producto'
+    show:
+      delete_product: 'Eliminar producto'
+      edit_product: 'Editar producto'
+    index:
+      title: 'Productos'
+      all: 'Todos'
+      min_price: 'Precio minimo'
+      max_price: 'Precio maximo'
+      query_text: '¿Que quieres buscar?'
+      expensive: 'Mayor precio'
+      cheapest: 'Menor precio'
+      newest: 'Mas nuevo'
+    create:
+      created: 'Producto creado'
+    update:
+      updated: 'Producto actualizado'
+    destroy:
+      destroyed: 'Producto eliminado'
+
+  categories:
+    index:
+      title: 'Categorias'
+      new: 'Nueva categoria'
+    edit:
+      title: 'Editar categoria'
+    new:
+      title: 'Nueva categoria'
+    category:
+      edit: 'Editar'
+      delete: 'Eliminar'
+    form:
+      create_category: 'Crear categoria'
+      edit_category: 'Editar categoria'
+    create:
+      created: 'Categoria creada'
+    update:
+      updated: 'Categoria actualizada'
+    destroy:
+      destroyed: 'Categoria eliminada'
+  shared:
+    header:
+      new_product: "Nuevo producto"
+      categories: "Categorias"
