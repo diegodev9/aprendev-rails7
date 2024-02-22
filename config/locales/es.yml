@@ -12,29 +12,12 @@ es:
         price: 'Precio'
         photo: 'Foto'
         select_category: 'Seleccionar categoria'
-    errors:
-      models:
-        product:
-          attributes:
-            title:
-              blank: 'No puede estar vacio'
-            description:
-              blank: 'No puede estar vacio'
-            price:
-              blank: 'No puede estar vacio'
-            category:
-              required: 'Tiene que tener una categoria'
-            user:
-              required: 'El usuario debe existir'
-        user:
-          attributes:
-            username:
-              invalid: 'El nombre de usuario es incorrecto'
-            email:
-              invalid: 'El email es incorrecto'
-            password:
-              blank: 'El password no puede estar en blanco'
-              too_short: 'El password debe tener al menos 6 caracteres'
+      user:
+        email: "Correo electronico"
+        username: "Usuario"
+        password: "Contraseña"
+      category:
+        name: 'Nombre'
   common:
     confirm: '¿Estas seguro?'
     back: 'Volver'
@@ -80,6 +63,7 @@ es:
     form:
       create_category: 'Crear categoria'
       edit_category: 'Editar categoria'
+      name: ""
     create:
       created: 'Categoria creada'
     update:
@@ -90,6 +74,9 @@ es:
     header:
       new_product: "Nuevo producto"
       categories: "Categorias"
+      login: "Iniciar sesión"
+      register: "Registrarse"
+      logout: "Cerrar sesión"
 
   authentication:
     users:
@@ -102,3 +89,5 @@ es:
       create:
         created: "Bienvenido"
         failed: "Login invalido"
+      destroy:
+        destroyed: "Sesión cerrada"
