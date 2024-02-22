@@ -22,6 +22,7 @@ es:
     confirm: '¿Estas seguro?'
     back: 'Volver'
     not_logged_in: "Tienes que iniciar sesion"
+    not_authorized: "No tienes permisos para hacer esto"
   products:
     edit:
       title: 'Editar producto'

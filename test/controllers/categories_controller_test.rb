@@ -41,5 +41,6 @@ class CategoriesControllerTest < ActionDispatch::IntegrationTest
     end
 
     assert_redirected_to categories_url
+    assert_equal flash[:notice], 'Categoria eliminada'
   end
 end

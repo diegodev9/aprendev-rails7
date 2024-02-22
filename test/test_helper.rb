@@ -14,6 +14,7 @@ module ActiveSupport
 
     def login
       post sessions_path, params: { login: 'paco01', password: 'password' }
+      @user = User.find_by(username: 'paco01')
     end
   end
 end
