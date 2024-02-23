@@ -23,4 +23,8 @@ class Product < ApplicationRecord
   def to_param
     "#{id}-#{title.downcase.to_s[0..100]}".parameterize
   end
+
+  def owner?
+    user_id == Current.user.id
+  end
 end
