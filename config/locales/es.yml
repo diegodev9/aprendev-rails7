@@ -80,6 +80,7 @@ es:
       login: "Iniciar sesión"
       register: "Registrarse"
       logout: "Cerrar sesión"
+      favorites: "Mis favoritos"
 
   authentication:
     users:
@@ -94,3 +95,6 @@ es:
         failed: "Login invalido"
       destroy:
         destroyed: "Sesión cerrada"
+  favorites:
+    index:
+      title: "Mis favoritos"

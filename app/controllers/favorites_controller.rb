@@ -1,5 +1,9 @@
 class FavoritesController < ApplicationController
-  before_action :find_product
+  before_action :find_product, except: :index
+
+  def index
+
+  end
 
   def create
     @product.favorite!

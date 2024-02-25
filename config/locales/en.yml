@@ -92,6 +92,7 @@ en:
       login: "Login"
       register: "Register"
       logout: "Logout"
+      favorites: "My favorites"
 
   authentication:
     users:
@@ -112,3 +113,6 @@ en:
       new:
         login: "User"
         password: "Password"
+  favorites:
+    index:
+      title: "My favorites"
