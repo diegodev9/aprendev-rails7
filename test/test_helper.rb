@@ -16,5 +16,9 @@ module ActiveSupport
       post sessions_path, params: { login: 'paco01', password: 'password' }
       @user = User.find_by(username: 'paco01')
     end
+
+    def logout
+      delete session_path(@user)
+    end
   end
 end

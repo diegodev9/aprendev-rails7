@@ -1,5 +1,6 @@
 class Product < ApplicationRecord
   include PgSearch::Model
+  include Favoritable
 
   has_one_attached :photo
   belongs_to :category
@@ -25,6 +26,6 @@ class Product < ApplicationRecord
   end
 
   def owner?
-    user_id == Current.user.id
+    user_id == Current.user&.id
   end
 end

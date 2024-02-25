@@ -92,6 +92,14 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     assert_response :unprocessable_entity
   end
 
+  test 'should show the product without login' do
+    logout
+    get product_path(products(:ps4))
+
+    assert_response :success
+    assert_select '.title', 'PS4 Fat'
+  end
+
   test 'render an edit product form' do
     get edit_product_path(products(:ps4))
 

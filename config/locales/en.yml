@@ -48,6 +48,7 @@ en:
     back: 'Go back'
     not_logged_in: "You are not logged in"
     not_authorized: "You don't have permission for this action"
+    not_found: "Not found"
   products:
     edit:
       title: 'Edit product'
@@ -59,6 +60,7 @@ en:
     show:
       delete_product: 'Delete product'
       edit_product: 'Edit product'
+      view_more_products: "View more products by %{username}"
     index:
       title: 'Products'
       all: 'All'
