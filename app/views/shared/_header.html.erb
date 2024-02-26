@@ -1,5 +1,5 @@
 <%= link_to products_path do %>
-  <h1><%= t('app_name') %></h1>
+  <h1 class="text-red-400 hover:text-blue-400 sm:bg-pink-400 dark:text-white"><%= t('app_name') %></h1>
   <%= link_to t('.new_product'), new_product_path if Current.user %>
   <%= link_to t('.favorites'), favorites_path if Current.user %>
   <%= link_to t('.categories'), categories_path if Current.user&.admin? %>
