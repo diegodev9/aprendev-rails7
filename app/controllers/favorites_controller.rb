@@ -7,12 +7,18 @@ class FavoritesController < ApplicationController
 
   def create
     @product.favorite!
-    redirect_to product_path(@product)
+    respond_to do |format|
+      format.html { redirect_to product_path(@product) }
+      format.turbo_stream { render turbo_stream: turbo_stream.replace('favorite', partial: 'products/favorite', locals: { product: @product } ) }
+    end
   end
 
   def destroy
     @product.unfavorite!
-    redirect_to product_path(@product), status: :see_other
+    respond_to do |format|
+      format.html { redirect_to product_path(@product), status: :see_other }
+      format.turbo_stream { render turbo_stream: turbo_stream.replace('favorite', partial: 'products/favorite', locals: { product: @product } ) }
+    end
   end
 
   private
