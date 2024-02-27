@@ -13,3 +13,10 @@
  *= require_tree .
  *= require_self
  */
+
+
+body, html {
+    width: 100vw;
+    max-width: 100vw;
+    overflow-x: hidden;
+}

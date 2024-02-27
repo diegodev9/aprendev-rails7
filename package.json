@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "tailwindcss": "^3.4.1"
+    "tailwindcss-stimulus-components": "^4.0.4"
   }
 }
