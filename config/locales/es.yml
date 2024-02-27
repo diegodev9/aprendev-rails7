@@ -75,6 +75,7 @@ es:
       destroyed: 'Categoria eliminada'
   shared:
     header:
+    items:
       new_product: "Nuevo producto"
       categories: "Categorias"
       login: "Iniciar sesión"

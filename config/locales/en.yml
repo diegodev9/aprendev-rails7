@@ -87,6 +87,7 @@ en:
         title: 'Nueva categoria'
   shared:
     header:
+    items:
       new_product: ""
       categories: ""
       login: "Login"
