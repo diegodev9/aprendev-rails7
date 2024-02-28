@@ -99,3 +99,9 @@ es:
   favorites:
     index:
       title: "Mis favoritos"
+  all: "Todas"
+
+  user_mailer:
+    welcome:
+      subject: "Bienvenido a CompraVenta"
+      welcome_message: "Hola %{name}, bienvenido a CompraVenta. Esperamos que vendas mucho"

@@ -59,6 +59,9 @@ gem 'view_component', '~> 3.10'
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ]
+
+  # Letter opener
+  gem 'letter_opener', '~> 1.9'
 end
 
 group :development do

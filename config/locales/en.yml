@@ -117,3 +117,9 @@ en:
   favorites:
     index:
       title: "My favorites"
+  all: "All"
+
+  user_mailer:
+    welcome:
+      subject: "Welcome to CompraVenta"
+      welcome_message: "Hey %{name}, welcome to CompraVenta. We hope you sell a lot!"
