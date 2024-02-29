@@ -32,5 +32,8 @@ module DemoVenta
 
     # Allow multiquery
     config.active_record.async_query_executor = :global_thread_pool
+
+    # Background jobs
+    config.active_job.queue_adapter = :sidekiq
   end
 end
