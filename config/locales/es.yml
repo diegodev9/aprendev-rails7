@@ -32,6 +32,10 @@ es:
     form:
       create_product: 'Crear producto'
       edit_product: 'Editar producto'
+      title_placeholder: "Producto"
+      description_placeholder: "Descripcion"
+      price_placeholder: "Precio"
+      category_placeholder: "Categoria"
     show:
       delete_product: 'Eliminar producto'
       edit_product: 'Editar producto'

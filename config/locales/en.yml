@@ -57,6 +57,10 @@ en:
     form:
       create_product: 'Create product'
       edit_product: 'Edit product'
+      title_placeholder: "Product"
+      description_placeholder: "Description"
+      price_placeholder: "Price"
+      category_placeholder: "Category"
     show:
       delete_product: 'Delete product'
       edit_product: 'Edit product'
