@@ -1,8 +1,4 @@
-<%= image_tag @product.photo, width: '100%' if @product.photo.attached? %>
-
-<h1 class="title"><%= @product.title %></h1>
-<p class="description"><%= @product.description %></p>
-<span class="price"><%= @product.price %>$</span>
+<%= render partial: 'product_details', locals: { product: @product } %>
 
 <br>
 
@@ -15,7 +11,4 @@
 
 <%= render partial: 'favorite', locals: { product: @product } %>
 
-<div data-controller="websocket-product" data-productid="<%= @product.id %>">
-
-</div>
-
+<%= turbo_stream_from @product %>
