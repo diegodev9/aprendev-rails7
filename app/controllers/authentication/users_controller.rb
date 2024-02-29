@@ -7,6 +7,9 @@ class Authentication::UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
+    ip = request.remote_ip
+    @user.country = FetchCityCountryService.new(ip).perform('country')
+    @user.city = FetchCityCountryService.new(ip).perform('city')
 
     if @user.save
       UserMailer.with(user: @user).welcome.deliver_later
@@ -20,6 +23,6 @@ class Authentication::UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:email, :username, :password)
+    params.require(:user).permit(:email, :username, :password, :city, :country)
   end
 end
